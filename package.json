@@ -6,8 +6,7 @@
     "scripts": {
         "test": "tape test/*.js",
         "ESM": "mocha test/*.js",
-        "ESM2": "",
-        "CJS": "tape test/*.js"
+        "CJS": "mocha test/*.js"
     },
     "repository": {
         "type": "git",
