@@ -1,0 +1,16 @@
+#!/bin/bash
+
+function runTest () {
+   mocha "$1" | tail -30  > "results.$2.txt"
+  STATUS_CODE=$?
+  echo "$1 -->  exit code = $STATUS_CODE"
+}
+rm results.*.txt
+touch "status_codes.txt"
+
+runTest "./test/interleave2.js" INTERLEAVE_2
+runTest "./test/interleave3.js" INTERLEAVE_3
+runTest "./test/test.js" TEST_MAIN
+
+
+
