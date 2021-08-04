@@ -13,3 +13,7 @@ results
 
 npm-debug.log
 node_modules/*
+
+results.*.txt
+status_codes
+status_codes.txt
