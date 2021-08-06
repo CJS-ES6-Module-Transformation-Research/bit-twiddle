@@ -5,7 +5,7 @@
     "main": "twiddle.js",
     "scripts": {
         "test": "tape test/*.js",
-        "ESM": "sh ./testScript ",
+        "ESM": "mocha test/test.js ; mocha test/interleave2.js ; mocha test/interleave3.js ",
         "CJS": "mocha test/*.js"
     },
     "repository": {
